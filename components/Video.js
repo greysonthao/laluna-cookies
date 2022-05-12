@@ -1,6 +1,5 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
 
 export default function Video() {
   return (
@@ -11,10 +10,10 @@ export default function Video() {
         src="https://www.youtube.com/embed/TMFV5LX8TY4"
         title="YouTube video player"
         // eslint-disable-next-line react/no-unknown-property
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         // eslint-disable-next-line react/no-unknown-property
-        allowfullscreen
+        allowFullScreen
       ></iframe>
     </Box>
   );

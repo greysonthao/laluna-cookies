@@ -45,7 +45,7 @@ export default function ThreeReasons() {
             fontWeight="bold"
             margin="1rem 0 1rem 0"
           >
-            Support Young Entreprenuers
+            Support New Entreprenuers
           </Typography>
           <Typography variant="body1" component="p" align="justify">
             When you place an order, you are helping us build our 1st business!
@@ -60,7 +60,7 @@ export default function ThreeReasons() {
             fontWeight="bold"
             margin="1rem 0 1rem 0"
           >
-            Receive The Best Ingredients
+            Receive Quality Ingredients
           </Typography>
           <Typography variant="body1" component="p" align="justify">
             You won’t find bleached wheat flour or high fructose corn syrup here

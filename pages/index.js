@@ -15,12 +15,15 @@ import OrderButton from "../components/OrderButton";
 import FAQ from "../components/FAQ";
 import ActionPlan from "../components/ActionPlan";
 import Testimonials from "../components/Testimonials";
+import Divider from "@mui/material/Divider";
+import Chip from "@mui/material/Chip";
+import CookieIcon from "@mui/icons-material/Cookie";
 
 export default function Home() {
   return (
     <div>
       <Head>
-        <title>Laluna Cookies</title>
+        <title>Laluna: Low-Carb Cookies</title>
         <meta name="description" content="Delicious paleo cookies" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -42,7 +45,33 @@ export default function Home() {
           <OrderButton />
         </Box>
       </Container>
-      <Box backgroundColor="black" padding="10rem"></Box>
+      <Box backgroundColor="black" padding="5rem">
+        <Container maxWidth="lg">
+          <Divider
+            sx={{
+              "&::before, &::after": {
+                borderColor: "white",
+              },
+            }}
+          >
+            <Chip
+              icon={<CookieIcon />}
+              label="YUM"
+              sx={{ backgroundColor: "white" }}
+            />
+          </Divider>
+          <Box>
+            <Typography
+              variant="body1"
+              margin="1rem 0 0 0"
+              textAlign="center"
+              sx={{ color: "white" }}
+            >
+              © 2022 Laluna LLC
+            </Typography>
+          </Box>
+        </Container>
+      </Box>
     </div>
   );
 }

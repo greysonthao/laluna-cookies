@@ -7,7 +7,20 @@ export default function UnderHero() {
   return (
     <Grid container>
       <Grid item xs={12} sm={4}>
-        <Paper square="true" sx={{ backgroundColor: "#272b34" }}>
+        <Paper square={true} sx={{ backgroundColor: "#272b34" }}>
+          <Typography
+            variant="h6"
+            component="h6"
+            padding="1.5rem"
+            color="white"
+            textAlign="center"
+          >
+            LOW CARB
+          </Typography>
+        </Paper>
+      </Grid>
+      <Grid item xs={12} sm={4}>
+        <Paper square={true} sx={{ backgroundColor: "#22262f" }}>
           <Typography
             variant="h6"
             component="h6"
@@ -20,20 +33,7 @@ export default function UnderHero() {
         </Paper>
       </Grid>
       <Grid item xs={12} sm={4}>
-        <Paper square="true" sx={{ backgroundColor: "#22262f" }}>
-          <Typography
-            variant="h6"
-            component="h6"
-            padding="1.5rem"
-            color="white"
-            textAlign="center"
-          >
-            LOW CARB, HIGH FAT
-          </Typography>
-        </Paper>
-      </Grid>
-      <Grid item xs={12} sm={4}>
-        <Paper square="true" sx={{ backgroundColor: "#2a2a2a" }}>
+        <Paper square={true} sx={{ backgroundColor: "#2a2a2a" }}>
           <Typography
             variant="h6"
             component="h6"

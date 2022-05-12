@@ -8,6 +8,8 @@ import OrderButton from "./OrderButton";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import logo from "../images/laluna_logo_white.png";
+import Link from "next/link";
 
 export default function Herosection() {
   const theme = useTheme();
@@ -24,6 +26,29 @@ export default function Herosection() {
           backgroundPosition: "center",
         }}
       >
+        {matches ? (
+          <Link href="/">
+            <a>
+              <Box
+                padding="1rem 1rem"
+                display="flex"
+                justifyContent="center"
+                sx={{ cursor: "pointer" }}
+              >
+                <Image
+                  src={logo}
+                  alt="Laluna logo"
+                  width="150px"
+                  height="100px"
+                />
+              </Box>
+            </a>
+          </Link>
+        ) : (
+          <Box padding="1rem 1rem" sx={{ cursor: "pointer" }}>
+            <Image src={logo} alt="Laluna logo" width="150px" height="100px" />
+          </Box>
+        )}
         <Typography
           variant={matches ? "h2" : "h1"}
           component="h1"
@@ -32,7 +57,7 @@ export default function Herosection() {
           color="white"
           padding="8rem 2rem 2rem 2rem"
         >
-          YUMMY GUILT-FREE COOKIES
+          GUILT-FREE COOKIES
         </Typography>
         <Typography
           variant="h5"
