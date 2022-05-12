@@ -14,7 +14,6 @@ import Link from "next/link";
 export default function Herosection() {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.down("sm"));
-  console.log(matches);
 
   return (
     <div>
